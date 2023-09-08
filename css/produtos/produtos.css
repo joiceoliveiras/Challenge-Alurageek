@@ -1,0 +1,238 @@
+/* Zerar margens, preenchimentos, fonte e uso de caixa de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container de produtos */
+.container-produtos {
+    margin: 4rem 10rem 4rem;
+    position: relative;
+}
+
+/* Cabeçalho dos produtos */
+.cabecalho-produtos {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Divisão do cabeçalho */
+.cabecalho-produtos div {
+    display: flex;
+}
+
+/* Grid de produtos */
+.grid-de-caixas {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Imagem de produto */
+.grid-de-caixas img {
+    width: 226px;
+    height: 224px;
+}
+
+/* Título dos produtos */
+.cabecalho-produtos h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Parágrafo dos produtos */
+.cabecalho-produtos p {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2A7AE4;
+    margin-top: 0.5rem;
+}
+
+/* Divisão do cabeçalho */
+.cabecalho-produtos div {
+    display: flex;
+    box-sizing: border-box;
+    width: 7rem;
+    cursor: pointer;
+}
+
+/* Ícone no cabeçalho */
+.cabecalho-produtos img {
+    width: 1.5rem;
+    margin-left: 0.7rem;
+}
+
+/* Título de produto */
+.caixa-container h3 {
+    font-size: 0.87rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+/* Parágrafo de produto */
+.caixa-container p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Link de produto */
+.caixa-container a {
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+/* Texto de produto */
+.caixa-container span {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Container de produto */
+.caixa-container {
+    position: relative;
+}
+
+/* Container de edição de produto */
+.container-edicao {
+    position: absolute;
+    display: flex;
+    top: 0.5rem;
+    left: 10.5rem;
+}
+
+/* Ícone de edição */
+.container-edicao img {
+    width: 1.5rem;
+    height: auto;
+}
+
+/* Botão de produto */
+.cabecalho-produtos button {
+    position: absolute;
+    background: #2A7AE4;
+    color: #fff;
+    width: 10.18rem;
+    height: 3.18rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 10rem;
+    cursor: pointer;
+}
+
+/* Espaçamento à direita para o contêiner do cabeçalho */
+.cabecalho-produtos div {
+    margin-right: 4.8rem;
+}
+
+/* Responsivo */
+@media (max-width: 1440px) {
+    .caixa-container img {
+        width: 160px;
+        height: 158px;
+    }
+    .container-edicao {
+        position: absolute;
+        display: flex;
+        top: 0.5rem;
+        left: 6.2rem;
+    }
+    .container-edicao img {
+        width: 1.5rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 1280px) {
+    .grid-de-caixas {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    .container-edicao {
+        position: absolute;
+        display: flex;
+        top: 0.5rem;
+        left: 6.8rem;
+    }
+    .container-edicao img {
+        width: 1.5rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-de-caixas {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    .container-produtos {
+        margin: 1rem 1rem 1rem;
+    }
+    .caixa-container img {
+        width: 166px;
+        height: 164px;
+    }
+    .container-edicao {
+        position: absolute;
+        display: flex;
+        top: 0.5rem;
+        left: 6.9rem;
+    }
+    .container-edicao img {
+        width: 1.5rem;
+        height: auto;
+    }
+    .cabecalho-produtos div {
+        margin-right: 5.0rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .grid-de-caixas {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .grid-de-caixas img {
+        width: 156px;
+        height: 154px;
+    }
+    .container-edicao {
+        position: absolute;
+        display: flex;
+        top: 0.2rem;
+        left: 6.2rem;
+    }
+    .container-edicao img {
+        width: 1.5rem;
+        height: auto;
+    }
+    .cabecalho-produtos button {
+        position: absolute;
+        background: #2A7AE4;
+        color: #fff;
+        width: 8.28rem;
+        height: 3.18rem;
+        border: none;
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-right: 10rem;
+        cursor: pointer;
+    }
+}

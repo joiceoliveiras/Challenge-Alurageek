@@ -1,0 +1,141 @@
+/* Container de produtos */
+.container-produtos {
+    margin: 4rem 10rem 4rem;
+}
+
+/* Cabeçalho de produtos */
+.cabecalho-produtos {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Divisão no cabeçalho de produtos */
+.cabecalho-produtos div {
+    display: flex;
+}
+
+/* Grade de caixas de produtos */
+.grid-de-caixas {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Imagem no container de caixa */
+.caixa-produto img {
+    width: 226px;
+    height: 224px;
+}
+
+/* Título no cabeçalho de produtos */
+.cabecalho-produtos h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Parágrafo no cabeçalho de produtos */
+.cabecalho-produtos p {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2A7AE4;
+    margin-top: 0.5rem;
+}
+
+/* Divisão no cabeçalho de produtos */
+.cabecalho-produtos div {
+    display: flex;
+    box-sizing: border-box;
+    width: 7rem;
+    cursor: pointer;
+}
+
+/* Imagem no cabeçalho de produtos */
+.cabecalho-produtos img {
+    width: 1.5rem;
+    margin-left: 0.7rem;
+}
+
+/* Título da caixa de produtos */
+.caixa-produto h3 {
+    font-size: 0.87rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+/* Parágrafo na caixa de produtos */
+.caixa-produto p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Link na caixa de produtos */
+.caixa-produto a {
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+/* Span na caixa de produtos */
+.caixa-produto span {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Link no cabeçalho de produtos */
+.cabecalho-produtos a {
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 1440px) {
+    .caixa-produto img {
+        width: 160px;
+        height: 158px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .grid-de-caixas {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-de-caixas {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    .container-produtos {
+        margin: 1rem 1rem 1rem;
+    }
+    .caixa-produto img {
+        width: 166px;
+        height: 164px;
+    }
+}
+
+@media (max-width: 414px) {
+    .grid-de-caixas {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .caixa-produto img {
+        width: 156px;
+        height: 154px;
+    }
+}

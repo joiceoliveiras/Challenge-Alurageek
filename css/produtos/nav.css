@@ -1,0 +1,293 @@
+/* Zerar margens, preenchimentos, fonte e uso de caixa de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Comportamento de rolagem suave no HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Barra de navegação */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    width: 100%;
+    height: 4.5rem;
+    top: 0;
+}
+
+/* Container do logotipo */
+.logo-container {
+    box-sizing: border-box;
+    margin-left: 10rem;
+    margin-top: 0.8rem;
+}
+
+/* Imagem do logotipo */
+.logo-container img {
+    width: 10rem;
+}
+
+/* Barra de pesquisa */
+.barra-de-busca {
+    position: relative;
+    display: flex;
+    right: 35rem;
+    box-sizing: border-box;
+}
+
+/* Campo de entrada de pesquisa */
+.barra-de-busca input {
+    position: absolute;
+    background: #F5F5F5;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 8px 16px;
+    width: 350px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-top: 1.2rem;
+    outline: none;
+}
+
+/* Ícone de pesquisa */
+.barra-de-busca img {
+    position: relative;
+    left: 20rem;
+    color: #d50909;
+    width: 1.6rem;
+}
+
+/* Botão de login */
+.btn-login {
+    position: relative;
+    right: 10rem;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+}
+
+/* Estilização do botão de login */
+.btn-login span {
+    border: 1px solid #2A7AE4;
+    padding: 12px 60px;
+}
+
+/* Link no botão de login */
+.btn-login a {
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: 0.87rem;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Cabeçalho 1 */
+.cabecalho1 {
+    width: 100%;
+    height: 25%;
+    background-size: cover;
+    position: relative;
+}
+
+/* Cabeçalho 2 */
+.cabecalho2 {
+    display: none;
+}
+
+/* Container de descrição */
+.descricao-container {
+    position: absolute;
+    top: 19rem;
+    box-sizing: border-box;
+    margin-left: 10rem; 
+}
+
+/* Título na descrição */
+.descricao-container h1 {
+    color: #fff;
+    font-size: 3.25rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+/* Parágrafo na descrição */
+.descricao-container p {
+    color: #fff;
+    font-size: 1.37rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Fundo destacado na descrição */
+.descricao-container span {
+    background: #2A7AE4;
+    padding: 12px 16px;
+}
+
+/* Link na descrição */
+.descricao-container a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.87rem;
+}
+
+/* Responsividade */
+@media (max-width: 1440px) {
+    .barra-de-busca {
+        position: relative;
+        display: flex;
+        right: 26rem;
+        box-sizing: border-box;
+    }
+    .descricao-container {
+        position: absolute;
+        top: 12rem;
+        box-sizing: border-box;
+        margin-left: 10rem; 
+    }
+}
+
+@media (max-width: 1280px) {
+    .descricao-container {
+        position: absolute;
+        top: 12rem;
+        box-sizing: border-box;
+        margin-left: 10rem; 
+    }
+    .barra-de-busca {
+        position: relative;
+        display: flex;
+        right: 20rem;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo-container {
+        box-sizing: border-box;
+        margin-left: 4rem;
+        margin-top: 0.8rem;
+    }
+    .logo-container img {
+        width: 8rem;
+    }
+    .btn-login {
+        position: relative;
+        right: 5rem;
+        margin-top: 1.5rem;
+        box-sizing: border-box;
+    }
+    .barra-de-busca {
+        position: relative;
+        display: flex;
+        right: 10rem;
+        box-sizing: border-box;
+    }
+    .barra-de-busca input {
+        position: absolute;
+        background: #F5F5F5;
+        border: none;
+        border-radius: 1.5rem;
+        padding: 8px 16px;
+        width: 250px;
+        height: 30px;
+        box-sizing: border-box;
+        margin-top: 1.2rem;
+        outline: none;
+    }
+    .barra-de-busca img {
+        position: relative;
+        left: 13.5rem;
+        width: 1.6rem;
+    }
+    .cabecalho1 {
+        display: none;
+    }
+    .cabecalho2 {
+        display: block;
+        width: 100%;
+        height: 25%;
+        background-size: cover;
+        position: relative;
+    }
+    .descricao-container {
+        position: absolute;
+        top: 6.5rem;
+        box-sizing: border-box;
+        margin-left: 2rem; 
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .logo-container {
+        box-sizing: border-box;
+        margin-left: 1rem;
+        margin-top: 0.8rem;
+    }
+    .logo-container img {
+        width: 8rem;
+    }
+    .btn-login {
+        position: relative;
+        right: 7rem;
+        margin-top: 1.5rem;
+        box-sizing: border-box;
+    }
+    .btn-login span {
+        border: 1px solid #2A7AE4;
+        padding: 12px 35px;
+    }
+    .btn-login a {
+        text-decoration: none;
+        color: #2A7AE4;
+        font-size: 0.87rem;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .descricao-container {
+        position: absolute;
+        top: 6.5rem;
+        box-sizing: border-box;
+        margin-left: 2rem; 
+        margin-top: 0rem;
+    }
+    .descricao-container h1 {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-bottom: 0.5rem;
+    }
+    .descricao-container p {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    .nav-bar {
+        display: flex;
+    }
+    .barra-de-busca input {
+        display: none;
+    }
+    .barra-de-busca img {
+        position: relative;
+        left: 19rem;
+        width: 1.6rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn-login {
+        position: relative;
+        right: 6rem;
+        margin-top: 1.5rem;
+        box-sizing: border-box;
+    }
+}
